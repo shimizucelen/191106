@@ -10,9 +10,4 @@ $('[name=alphabet]').change(function () {
     console.log(txt); // 出力：えーびーしー
 });
 
-if (inputNum > 20) {
-    alert("あなたは成人ですね！！");
-} else {
-    var age = 20 - Number(input);
-    alert(`成人まであと${age}歳です。`);
-}
+//いらないものは消そう
