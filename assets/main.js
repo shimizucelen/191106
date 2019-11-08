@@ -2,12 +2,10 @@ var title = document.getElementById('title');
 console.log(title);
 title.classList.add('purple');
 
-var input = prompt('あなたの年齢は？');
-var inputNum = Number(input);
-var future = Number(input) + 10;
-title.textContent = "KEISUKEさん10年後は" + future + "歳です！";
+var input = Number(prompt('あなたの年齢は？'));
+title.textContent = "KEISUKEさん10年後は" + input+10 + "歳です！";
 
-if(inputNum > 20){
+if(inputNum >= 20){
 	alert("あなたは成人ですね！！");
 } else {
 	var age = 20 - Number(input);
